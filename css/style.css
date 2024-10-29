@@ -56,10 +56,10 @@ a button{
 }
 
 button {
-    background-color: white; /* Color de fondo original */
-    color: #1A0752; /* Color del texto */
+    background-color: white !important; /* Color de fondo original */
+    color: #1A0752 !important; /* Color del texto */
     padding: 15px 15px; /* Espaciado interno */
-    border: none;
+    border: none !important;
     border-radius: 3px;
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
     font-size: 14px; /* Tamaño de fuente */
@@ -70,8 +70,8 @@ button {
 
 /* Efecto al pasar el mouse */
 button:hover {
-    background-color: #819B94; /* Color de fondo al pasar el mouse */
-    transform: scale(1.1); /* Aumenta el tamaño del botón un 10% */
+    background-color: #819B94 !important; /* Color de fondo al pasar el mouse */
+    transform: scale(1.1) !important; /* Aumenta el tamaño del botón un 10% */
 }
 
 
