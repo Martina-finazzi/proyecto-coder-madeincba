@@ -1,29 +1,40 @@
-$primary-color: #1A0752;
-$secondary-color: #1B1B17;
-$background-color: #BDBAE3;
-$footer-background: #8680FF;
-$button-background-hover: #819B94;
-$block-background: #f0f0f0;
-$border-color: #ccc;
+    // Definición de variables de color
+    $primary-color: #1A0752;
+    $secondary-color: #1B1B17;
+    $background-color: #BDBAE3;
+    $header-background: #333;
+    $footer-background: #8680FF;
+    $button-hover-background: #819B94;
+    $block-background: #f0f0f0;
+    $border-color: #ccc;
+    $text-color-dark: #333;
 
-h1 {
+    // Estilos para encabezados y texto
+    h1 {
     color: $primary-color;
     font-size: 60px;
-}
+    }
 
-h2, h3, h4, h5, p, form, ul {
+    h2, h3, h4, h5, p, form, ul {
     color: $secondary-color;
-}
+    }
 
-body {
+    h2, h1, h3, p {
+    margin: 10px;
+    padding: 5px;
+    }
+
+    // Estilos para el cuerpo de la página
+    body {
     background-color: $background-color;
-    font-family: 'Arial', sans-serif;
+    font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
-}
+    }
 
-header {
-    background-color: aliceblue;
+    // Estilos para el encabezado y el menú de navegación
+    header {
+    background-color: $header-background;
     padding: 10px;
 
     nav ul {
@@ -35,24 +46,25 @@ header {
         gap: 25px;
 
         li a {
-            color: $secondary-color;
-            text-decoration: none;
-            font-weight: bold;
+        color: $secondary-color;
+        text-decoration: none;
+        font-weight: bold;
         }
     }
-}
+    }
 
-.subtitulo {
+    .subtitulo {
     color: $primary-color;
     font-size: 20px;
     font-style: italic;
-}
+    }
 
-a button {
+    // Estilos para botones
+    a button {
     margin-bottom: 20px;
-}
+    }
 
-button {
+    button {
     background-color: white !important;
     color: $primary-color !important;
     padding: 15px;
@@ -65,19 +77,21 @@ button {
     margin: auto;
 
     &:hover {
-        background-color: $button-background-hover !important;
+        background-color: $button-hover-background !important;
         transform: scale(1.1) !important;
     }
-}
+    }
 
-.container {
+    // Contenedor principal
+    .container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
     min-height: 100vh;
-}
+    }
 
-.main-content {
+    // Estilos para el contenido principal
+    .main-content {
     padding: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -87,9 +101,10 @@ button {
     h1, h2, h3 {
         grid-column: span 2;
     }
-}
+    }
 
-footer {
+    // Estilos para el pie de página
+    footer {
     background-color: $footer-background;
     color: #fff;
     padding: 20px;
@@ -100,13 +115,14 @@ footer {
         padding: 0;
 
         li {
-            display: inline;
-            margin: 10px;
+        display: inline;
+        margin: 10px;
         }
     }
-}
+    }
 
-.caja-bloque {
+    // Estilos para bloques generales
+    .caja-bloque {
     background-color: $block-background;
     padding: 20px;
     border: 1px solid $border-color;
@@ -114,9 +130,10 @@ footer {
     position: relative;
     text-align: center;
     margin: 20px;
-}
+    }
 
-.slider-container {
+    // Estilos para el contenedor de slider
+    .slider-container {
     width: 100%;
     overflow: hidden;
 
@@ -125,20 +142,21 @@ footer {
         transition: transform 0.5s ease;
 
         .slide {
-            img {
-                width: 100%;
-                height: auto;
-            }
+        img {
+            width: 100%;
+            height: auto;
+        }
 
-            h3 {
-                margin-top: 10px;
-                color: #333;
-            }
+        h3 {
+            margin-top: 10px;
+            color: $text-color-dark;
+        }
         }
     }
-}
+    }
 
-.contenedor {
+    // Estilos para contenedores adicionales
+    .contenedor {
     display: flex;
     justify-content: space-between;
     margin: 10px;
@@ -149,19 +167,22 @@ footer {
         padding: 5px;
         background-color: $footer-background;
         border-radius: 5px;
+
         h2 {
-            text-align: center;
-            color: #333;
+        text-align: center;
+        color: $text-color-dark;
         }
     }
-}
+    }
 
-.contenedor-centrado {
+    // Estilos centrados
+    .contenedor-centrado {
     text-align: center;
     margin: 20px;
-}
+    }
 
-.caja-formulario {
+    // Estilos para formulario de contacto
+    .caja-formulario {
     background-color: $background-color;
     border-radius: 3px;
     padding: 15px;
@@ -170,7 +191,7 @@ footer {
 
     h2 {
         text-align: center;
-        color: #333;
+        color: $text-color-dark;
     }
 
     input, textarea {
@@ -195,24 +216,25 @@ footer {
         font-size: 14px;
 
         &:hover {
-            background-color: $button-background-hover;
+        background-color: $button-hover-background;
         }
     }
-}
+    }
 
-.map-container {
+    // Otros estilos adicionales
+    .map-container {
     margin-bottom: 20px;
     margin-left: 20px;
-}
+    }
 
-.navbar-brand img {
+    .navbar-brand img {
     width: 50px;
     height: auto;
-}
+    }
 
-#carouselExampleCaptions {
+    #carouselExampleCaptions {
     width: 60%;
     height: auto;
     display: block;
     margin: auto;
-}
+    }

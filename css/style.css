@@ -1,283 +1,200 @@
-/*
-
-selector{
-    propiedad: valor;
-}
-
-*/
-
-h1{
+    h1 {
     color: #1A0752;
     font-size: 60px;
-}
+    }
 
-h3{
-    color:#1B1B17;
-}
-
-h2{
+    h2, h3, h4, h5, p, form, ul {
     color: #1B1B17;
-}
+    }
 
-p{
-    color: #1B1B17;
-}
+    h2, h1, h3, p {
+    margin: 10px;
+    padding: 5px;
+    }
 
-body{
+    body {
     background-color: #BDBAE3;
-}
-form{
-    color: #1B1B17;
-}
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    }
 
-h4{
-    color: #1B1B17;
-}
-
-h5{
-    color: #1B1B17;
-}
-
-ul{
-    color: #1B1B17;
-}
-header{
-    background-color: aliceblue;
+    header {
+    background-color: #333;
     padding: 10px;
-}
-.subtitulo{
-    color: #1A0752;
-    font-size: 20px;
-    font-style: italic;
-}
-
-a button{
-    margin-bottom: 20px;
-}
-
-button {
-    background-color: white !important; /* Color de fondo original */
-    color: #1A0752 !important; /* Color del texto */
-    padding: 15px 15px; /* Espaciado interno */
-    border: none !important;
-    border-radius: 3px;
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    font-size: 14px; /* Tamaño de fuente */
-    transition: background-color 0.3s, transform 0.3s; /* Transición suave para cambios de color y tamaño */
-    display: block; 
-    margin: auto;
-}
-
-/* Efecto al pasar el mouse */
-button:hover {
-    background-color: #819B94 !important; /* Color de fondo al pasar el mouse */
-    transform: scale(1.1) !important; /* Aumenta el tamaño del botón un 10% */
-}
-
-
-
-
-/* Aplica estilos al ul que pertenece al menú de navegación */
-nav ul {
+    }
+    header nav ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
     justify-content: flex-end;
     gap: 25px;
-}
-
-header nav ul li a {
+    }
+    header nav ul li a {
     color: #1B1B17;
     text-decoration: none;
     font-weight: bold;
-}
+    }
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    .subtitulo {
+    color: #1A0752;
+    font-size: 20px;
+    font-style: italic;
+    }
 
-.container {
+    a button {
+    margin-bottom: 20px;
+    }
+
+    button {
+    background-color: white !important;
+    color: #1A0752 !important;
+    padding: 15px;
+    border: none !important;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    margin: auto;
+    }
+    button:hover {
+    background-color: #819B94 !important;
+    transform: scale(1.1) !important;
+    }
+
+    .container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
     min-height: 100vh;
-}
-.main-content {
+    }
+
+    .main-content {
     padding: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columnas para contenido */
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     align-items: start;
-}
+    }
+    .main-content h1, .main-content h2, .main-content h3 {
+    grid-column: span 2;
+    }
 
-.main-content h1, 
-.main-content h2, 
-.main-content h3 {
-    grid-column: span 2; /* Los títulos ocupan ambas columnas */
-}
-
-footer {
+    footer {
     background-color: #8680FF;
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-footer ul {
+    }
+    footer ul {
     list-style: none;
     padding: 0;
-}
-
-footer ul li {
+    }
+    footer ul li {
     display: inline;
     margin: 10px;
-}
+    }
 
-/* Estilos generales de la caja */
-.caja-bloque {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    position: relative;
-}
-
-/* Cinta del slider que se mueve horizontalmente */
-.slider {
-    display: flex;
-    transition: transform 0.5s ease; /* Añadimos suavidad al desplazamiento */
-}
-
-.slide img {
-    width: 100%; /* Ajusta la imagen al ancho del contenedor */
-    height: auto;
-}
-
-.slide h3 {
-    margin-top: 10px;
-    color: #333;
-}
-/* Estilos generales de la caja */
-.caja-bloque {
+    .caja-bloque {
     background-color: #f0f0f0;
     padding: 20px;
     border: 1px solid #ccc;
-    overflow: hidden; /* Evita que el contenido que sale del contenedor se muestre */
+    overflow: hidden;
     position: relative;
-}
-
-/* Contenedor del slider */
-.slider-container {
-    width: 100%;
-    overflow: hidden; /* Esconde las imágenes que no están visibles */
-}
-
-/* Cinta del slider que se mueve horizontalmente */
-.slider {
-    display: flex;
-    transition: transform 0.5s ease; /* Añadimos suavidad al desplazamiento */
-}
-
-/* Contenedor que usa Flexbox */
-.contenedor {
-    display: flex;
-    justify-content: space-between; /* Espacia las cajas horizontalmente */
-    margin: 10px; /* Margen externo para el contenedor */
-}
-
-/* Estilo para cada caja */
-.caja-mision, .caja-vision {
-    flex: 1; /* Las cajas ocupan el mismo espacio */
-    margin: 10px; /* Espacio entre las cajas */
-    padding: 5px; /* Espacio interno */
-    background-color: #8680FF;/* Color de fondo */
-    border-radius: 5px; /* Bordes redondeados */
-}
-
-/* Títulos de las cajas */
-h2 {
-    color: #333; /* Color del texto del título */
-}
-
-.caja-vision, .caja-mision h2 {
-    text-align: center; /* Centre el texto */
-}
-
-.contenedor-centrado {
-    text-align: center; 
-    margin: 20px; 
-}
-
-h2, h1, h3, p {
-    margin: 10px; 
-    padding: 5px; 
-}
-
-.caja-bloque{
     text-align: center;
     margin: 20px;
-}
+    }
 
+    .slider-container {
+    width: 100%;
+    overflow: hidden;
+    }
+    .slider-container .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    }
+    .slider-container .slider .slide img {
+    width: 100%;
+    height: auto;
+    }
+    .slider-container .slider .slide h3 {
+    margin-top: 10px;
+    color: #333;
+    }
 
-/*CONTACTO FORMULARIO*/
+    .contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    }
+    .contenedor .caja-mision, .contenedor .caja-vision {
+    flex: 1;
+    margin: 10px;
+    padding: 5px;
+    background-color: #8680FF;
+    border-radius: 5px;
+    }
+    .contenedor .caja-mision h2, .contenedor .caja-vision h2 {
+    text-align: center;
+    color: #333;
+    }
 
-.caja-formulario {
+    .contenedor-centrado {
+    text-align: center;
+    margin: 20px;
+    }
+
+    .caja-formulario {
     background-color: #BDBAE3;
-    border-radius: 3px; /* Bordes redondeados */
-    padding: 15px; /* Espaciado interno */
-    max-width: 450px; /* Ancho máximo de la caja */
-    margin: 10px auto; /* Centra la caja horizontalmente con un margen superior */
-}
+    border-radius: 3px;
+    padding: 15px;
+    max-width: 450px;
+    margin: 10px auto;
+    }
+    .caja-formulario h2 {
+    text-align: center;
+    color: #333;
+    }
+    .caja-formulario input, .caja-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
+    .caja-formulario #enviar-container {
+    text-align: center;
+    }
+    .caja-formulario button {
+    padding: 15px;
+    border: none;
+    background-color: white;
+    color: #1A0752;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    }
+    .caja-formulario button:hover {
+    background-color: #819B94;
+    }
 
-.caja-formulario h2 {
-    text-align: center; /* Centra el título del formulario */
-    color: #333; /* Color del texto del título */
-}
-
-
-.caja-formulario input,
-.caja-formulario textarea {
-    width: 100%; /* Ancho completo del input */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 15px; /* Espacio entre los inputs */
-    border: 1px solid #ccc; /* Borde de los inputs */
-    border-radius: 3px; /* Bordes redondeados de los inputs */
-}
-
-#enviar-container {
-    text-align: center; /* Centra el botón de enviar */
-}
-
-.caja-formulario button {
-    padding: 15px 15px; /* Espaciado interno del botón */
-    border: none; 
-    background-color: white; /* Color de fondo del botón */
-    color: #1A0752; /* Color del texto del botón */
-    border-radius: 3px; /* Bordes redondeados del botón */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    font-size: 14px; /* Tamaño del texto del botón */
-}
-
-.caja-formulario button:hover {
-    background-color: #819B94; 
-}
-
-.map-container {
+    .map-container {
     margin-bottom: 20px;
     margin-left: 20px;
-}
+    }
 
-
-.navbar-brand img {
-    width: 50px; 
+    .navbar-brand img {
+    width: 50px;
     height: auto;
-}
+    }
 
-#carouselExampleCaptions {
-    width: 60%; /* Cambia este valor según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Hace que la imagen sea un bloque */
-    margin: auto; /* Centra la imagen */
-}
+    #carouselExampleCaptions {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    }
+
+    /*# sourceMappingURL=style.css.map */
