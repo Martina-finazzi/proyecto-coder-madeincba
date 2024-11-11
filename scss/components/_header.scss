@@ -1,0 +1,27 @@
+    // Estilos para el encabezado y el menú de navegación
+    header {
+        background-color: $header-background;
+        padding: 10px;
+    
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-content: flex-end;
+            gap: 25px;
+    
+            li a {
+            color: $secondary-color;
+            text-decoration: none;
+            font-weight: bold;
+            }
+        }
+        }
+    
+        .subtitulo {
+        color: $primary-color;
+        font-size: 20px;
+        font-style: italic;
+        }
+    

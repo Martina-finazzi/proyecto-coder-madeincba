@@ -1,0 +1,147 @@
+    // Definición de variables de color
+    $primary-color: #1A0752;
+    $secondary-color: #1B1B17;
+    $background-color: #BDBAE3;
+    $header-background: #333;
+    $footer-background: #8680FF;
+    $button-hover-background: #819B94;
+    $block-background: #f0f0f0;
+    $border-color: #ccc;
+    $text-color-dark: #333;
+
+    // Estilos para encabezados y texto
+    h1 {
+    color: $primary-color;
+    font-size: 60px;
+    }
+
+    h2, h3, h4, h5, p, form, ul {
+    color: $secondary-color;
+    }
+
+    h2, h1, h3, p {
+    margin: 10px;
+    padding: 5px;
+    }
+
+    // Estilos para el cuerpo de la página
+    body {
+    background-color: $background-color;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+
+
+
+    // Contenedor principal
+    .container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    }
+
+    // Estilos para el contenido principal
+    .main-content {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: start;
+
+    h1, h2, h3 {
+        grid-column: span 2;
+    }
+    }
+
+    // Estilos para el pie de página
+    footer {
+    background-color: $footer-background;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+        display: inline;
+        margin: 10px;
+        }
+    }
+    }
+
+    // Estilos para bloques generales
+    .caja-bloque {
+    background-color: $block-background;
+    padding: 20px;
+    border: 1px solid $border-color;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    }
+
+    // Estilos para el contenedor de slider
+    .slider-container {
+    width: 100%;
+    overflow: hidden;
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease;
+
+        .slide {
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h3 {
+            margin-top: 10px;
+            color: $text-color-dark;
+        }
+        }
+    }
+    }
+
+    // Estilos para contenedores adicionales
+    .contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+    .caja-mision, .caja-vision {
+        flex: 1;
+        margin: 10px;
+        padding: 5px;
+        background-color: $footer-background;
+        border-radius: 5px;
+
+        h2 {
+        text-align: center;
+        color: $text-color-dark;
+        }
+    }
+    }
+
+    // Estilos centrados
+    .contenedor-centrado {
+    text-align: center;
+    margin: 20px;
+    }
+
+
+    // Otros estilos adicionales
+    .map-container {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    }
+
+    .navbar-brand img {
+    width: 50px;
+    height: auto;
+    }
