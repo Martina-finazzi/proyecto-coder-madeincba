@@ -145,3 +145,28 @@
     width: 50px;
     height: auto;
     }
+
+    $animation-duration: 5s;
+    $animation-timing: linear;
+    $animation-iteration: infinite;
+    $max-width: 1400px;
+    
+    .slider-container {
+        width: 100%;
+        max-width: $max-width;
+        animation: change-color $animation-duration $animation-timing $animation-iteration;
+        margin-bottom: 50px;
+    }
+    
+    @keyframes change-color {
+        0% {
+            background: #819B94;
+        }
+        50% {
+            background: #8680FF;
+        }
+        100% {
+            background: #1A0752;
+        }
+    }
+    
