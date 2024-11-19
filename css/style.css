@@ -174,12 +174,22 @@ header nav ul li a {
   font-style: italic;
 }
 
+
 #carouselExampleCaptions {
   width: 60%;
   height: auto;
   display: block;
   margin: auto;
 }
+
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #carouselExampleCaptions {
+    width: 100%; 
+    height: auto; 
+  }
+}
+
 
 .caja-formulario {
   background-color: #BDBAE3;
